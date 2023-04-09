@@ -53,7 +53,7 @@ public class test : MonoBehaviour
 	{
 		try
 		{
-			socketConnection = new TcpClient("raspberrypi", 7000);
+			socketConnection = new TcpClient("raspberrypi.local", 7000);
 			Byte[] bytes = new Byte[1024];
 			while (true)
 			{

@@ -6,6 +6,7 @@ public class cube : MonoBehaviour
 {
     public test ultrasound;
 
+    public float rotateSpeed = 5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,8 @@ public class cube : MonoBehaviour
     void Update()
     {
         SetSize();
+
+        transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
     }
 
     public void SetSize()
